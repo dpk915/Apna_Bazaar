@@ -1,0 +1,68 @@
+#items {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(35, 47, 62);
+    color: white;
+    justify-content: space-around;
+}
+
+#signup>p {
+    margin: 10px;
+}
+
+#items a {
+    color: white;
+    text-decoration: none;
+}
+
+#backimage>img {
+    height: 400px;
+    width: 100%;
+}
+
+#signup>img {
+    width: 600px;
+    height: 200px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+#signup {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 20%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#signup>input {}
+
+form {
+    margin: auto;
+}
+
+form>input {
+    width: 100%;
+    align-self: center;
+    height: 20px;
+}
+
+form:nth-child(4) {
+    background-color: aqua;
+}
+
+form>h4 {
+    margin: 0%;
+}
+
+#number {
+    background-color: rgb(195, 189, 181);
+    border-radius: 50px;
+}
+
+#submit {
+    background-color: rgb(246, 218, 149);
+}
