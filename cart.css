@@ -1,0 +1,29 @@
+#deepak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#deepak>div {
+    width: 20%;
+    height: auto;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+}
+
+#deepak>div>img {
+    width: 100%
+}
+
+.rmvbtn {
+    background-color: aqua;
+    margin-left: 10%;
+}
+
+.butt {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between
+}

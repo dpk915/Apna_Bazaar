@@ -6,118 +6,190 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="items.css">
+    <link rel="stylesheet" href="navcopied.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <div>
-        <nav id="nav">
-            <div id="logo">
-                <img src="C:\Users\Yadav\Downloads\Black & White Minimalist Business Logo (1).png" alt="">
-            </div>
-            <div id="address">
-                <i class="fa-light fa-location-dot"></i>
-                <div>
-                    <h7>Hello</h7>
-                    <h3>Select your address</h3>
+        <div class="first">
+            <div class="flexbody logo">
+
+
+                <a href="index.html"> <img src="https://pnggrid.com/wp-content/uploads/2021/05/Amazon-Logo-Transparent-2048x620.png" alt=""></a>
+                <div class="map flexbody">
+
+                    <div>
+                        <span> &nbsp; &nbsp; Hello</span>
+                        <br>
+                        <i class="fas fa-map-marker"></i>
+
+                        <span>Select your address</span>
+                    </div>
                 </div>
             </div>
-            <div id="input">
+
+            <div class="flexbody input">
                 <div>
-                    <select id="Category">
-                <option value="option1">All Category</option>
-                <option value="option2">Amazon Device</option>
-                <option value="option3">Amazon Fashion</option>
-                <option value="option4">Amazon Fresh</option>
-                <option value="option5">Amazon Beauty</option>
-               </select>
-                </div>
-
-                <input type="text">
-                <input type="submit" id="search" value="Search">
-
-            </div>
-
-
-            <div id="lang">
-                <select name="select language" id="language">
-                    <option value="">English</option>
-                    <option value="">Hindi</option>
-                    <option value="">Japanees</option>
-                    <option value="">French</option>
-                    <option value="">German</option>
-                    <option value="">Chinees</option>
-                    <option value="">Urdu</option>
+                    <select name="" id="dropdown">
+                    <option value="1">All</option>
+                    <option value="Music">Music</option>
+                    <option value="Beauty">Beauty</option>
+                    <option value="Toys">Toys</option>
+                    <option value="Kids">Kids</option>
+                    <option value="Shoes">Shoes</option>
+                    <option value="Baby">Baby</option>
+                    <option value="Beauty">Beauty</option>
+                    <option value="Jewelery">Jewelery</option>
+                    <option value="Sports">sports</option>
                 </select>
+                </div>
+                <input type="text" id="searchitem">
+                <button id="searchbtn"><i class="fas fa-search"></i></button>
             </div>
-            <div id="login">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                    <h4>login & signup</h4>
+            <div class="flexbody right">
+                <div class="flexbody language">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbC86pLA9G9jHNgJpjouaOtzwwa1tHr3vy0vcK2CcGyg&s" alt="">
+                    <span>EN</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="sign">
+                    <a href="signup.html">
+                        <span>Hello, sign in </span>
+                        <div class="flexbody ac">
+                            <span>Account & Lists</span>
+                            <i class="fas fa-caret-down"></i>
+                    </a>
+                    </div>
+                </div>
+                <div class="sign">
+                    <span>Returns</span>
+                    <span>& Orders</span>
+                </div>
+                <div class="flexbody cart">
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart"> </i>
+                        <span class="Quantity">Cart</span>
+                        <p>0</p>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div id="items">
+            <div class="items">
+                <a href="#">
+                    <h3>All</h3>
                 </a>
             </div>
-            <div id="orders">Return <br> & order</div>
-            <div id="cart">
-                <i class="fa-light fa-cart-shopping"></i>
-                <a href="#">cart</a>
+            <div class="items">
+                <a href="#">
+                    <h3>Amazon miniTv</h3>
+                </a>
             </div>
-        </nav>
-    </div>
-    <div id="items">
-        <div class="items">
-            <a href="#">
-                <h3>All</h3>
-            </a>
+            <div class="items">
+                <a href="#">
+                    <h3>Best Seller</h3>
+                </a>
+            </div>
+            <div class="items">
+                <a href="#">
+                    <h3>Mobile</h3>
+                </a>
+            </div>
+            <div class="items">
+                <a href="#">
+                    <h3>Today's Deals</h3>
+                </a>
+            </div>
+            <div class="items">
+                <a href="#">
+                    <h3>Coustomer Services</a>
+                </h3>
+            </div>
+            <div class="items">
+                <a href="#">
+                    <h3>Electronic</h3>
+                </a>
+            </div>
+            <div class="items">
+                <a href="#">
+                    <h3>Fashion</h3>
+                </a>
+            </div>
+            <div class="items">
+                <a href="#">
+                    <h3>Amazon pay</h3>
+                </a>
+            </div>
+            <div class="items">
+                <a href="#">
+                    <h3>Home Kitchen</h3>
+                </a>
+            </div>
         </div>
-        <div class="items">
-            <a href="#">
-                <h3>Amazon miniTv</h3>
-            </a>
+        <div id="container">
+
+            <div id="backimage"></div>
+
+
+            <div class="cat">
+
+
+                <div id="women" class="catbox">
+                    <div>
+                        <h2>Up to 70% off | Styles for Women</h2>
+                    </div>
+                    <div>
+                        <div class="item1"></div>
+                        <div class="item1"></div>
+                        <div class="item1"></div>
+                        <div class="item1"></div>
+                    </div>
+                </div>
+                <div class="catbox">
+                    <h2>Pay your credit card bills on Amazon</h2>
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Boson/Sid/CCBP/DesktopGateway_CategoryCard_379x304_CCBP._SY304_CB413372299_.jpg" alt="">
+                    <a href="#">Pay now</a>
+                </div>
+                <div class="catbox">
+                    <h2>Professional tools, testing & more Up to 60% OFF</h2>
+                </div>
+                <div class="catbox">
+                    <div id="sign">
+                        <h2>Sign in for your best experience</h2>
+                        <button>Sign in Securly</button>
+                    </div>
+                    <div id="filco"></div>
+
+                </div>
+                <div class="catbox">
+                    <h2>Upgrade your home | Amazon Brands & more</h2>
+                </div>
+                <div class="catbox">
+                    <h2>Shop by Category</h2>
+                </div>
+                <div class="catbox">
+                    <h2>Automotive essentials | Up to 60% off</h2>
+                </div>
+                <div class="catbox">
+                    <h2>Shop by Category</h2>
+                </div>
+            </div>
+
+
         </div>
-        <div class="items">
-            <a href="#">
-                <h3>Best Seller</h3>
-            </a>
-        </div>
-        <div class="items">
-            <a href="#">
-                <h3>Mobile</h3>
-            </a>
-        </div>
-        <div class="items">
-            <a href="#">
-                <h3>Today's Deals</h3>
-            </a>
-        </div>
-        <div class="items">
-            <a href="#">
-                <h3>Coustomer Services</a>
-            </h3>
-        </div>
-        <div class="items">
-            <a href="#">
-                <h3>Electronic</h3>
-            </a>
-        </div>
-        <div class="items">
-            <a href="#">
-                <h3>Fashion</h3>
-            </a>
-        </div>
-        <div class="items">
-            <a href="#">
-                <h3>Amazon pay</h3>
-            </a>
-        </div>
-        <div class="items">
-            <a href="#">
-                <h3>Home Kitchen</h3>
-            </a>
-        </div>
-    </div>
-    <div id="backimage"></div>
+        <div id="cont1"></div>
 </body>
 <script src="index.js"></script>
+<script src="fetch.js"></script>
 
 </html>

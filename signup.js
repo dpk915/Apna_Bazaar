@@ -13,21 +13,21 @@ form1.addEventListener("submit", function(e) {
     }
     var member = false;
     userdata.forEach(element => {
-
         if (element.phonenum == phone) {
             member = true;
         }
-
     });
+
+
     if (member == true) {
-        alert("User already have account")
-        window.open("index.html")
+
+        alert("User already have account");
+
+
     } else {
         alert("Signup Successfull")
+        window.open("login.html")
         userdata.push(obj)
+        localStorage.setItem("logindetail", JSON.stringify(userdata));
     }
-
-
-    console.log(userdata)
-    localStorage.setItem("logindetail", JSON.stringify(userdata));
 })
