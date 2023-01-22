@@ -1,29 +1,38 @@
 var Lsdata = JSON.parse(localStorage.getItem("cartitem")) || [];
 let cart1 = document.getElementById("deepak");
-var total1 = document.getElementById("total");
-var total11 = document.getElementById("total12");
 
-display(Lsdata)
+var total11 = document.getElementById("total12");
+console.log(Lsdata)
+
 
 if (
     Lsdata.length == 0
 ) {
-    total11.innerHTML = ""
+    cart1.innerHTML = ""
     var empd = document.createElement("div")
     var empimg = document.createElement("img");
+    var out = document.createElement("h1")
+    out.innerText = "Your Cart is Empty  please Add Something "
+    var buy = document.createElement("a");
+    buy.innerText = "Buy Items";
+    buy.setAttribute("href", "index.html")
     empimg.src = "https://m.media-amazon.com/images/G/31/cart/empty/kettle-desaturated._CB424694257_.svg"
-    empd.append(empimg);
+    empd.append(empimg, out);
+
     cart1.append(empd)
+    cart1.append(buy)
 
 }
 
 function display(x) {
 
     cart1.innerHTML = ""
-    let sum = 0;
+    var sum = 0;
     x.map((element, index) => {
-        sum += element.quantity * Number(element.price)
+        console.log(Lsdata)
 
+
+        sum += element.quantity * Number(element.price)
         var div1 = document.createElement("div")
         var image = document.createElement("img")
         var price = document.createElement("h4")
@@ -70,6 +79,7 @@ function display(x) {
                 quantity.innerText = element.quantity;
 
                 localStorage.setItem("cartitem", JSON.stringify(Lsdata))
+                display(Lsdata)
             }
         })
 
@@ -79,17 +89,22 @@ function display(x) {
         remove.addEventListener("click", () => {
             Lsdata.splice(index, 1);
             localStorage.setItem("cartitem", JSON.stringify(Lsdata))
-            window.location.reload()
+            window.location.reload();
         })
 
 
 
 
-
+        let t = document.querySelector("#final-value")
+        t.innerText = sum
+        let productcart = document.querySelector("#total-cart")
+        productcart.innerText = Lsdata.length
 
         btns.append(inc, quantity, dec, remove)
-        total1.innerText = sum
+
         div1.append(image, name, price, cat, dis, btns)
         cart1.append(div1)
+
     })
 }
+display(Lsdata)

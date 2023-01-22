@@ -6,15 +6,16 @@
 }
 
 #deepak>div {
-    width: 20%;
-    height: auto;
+    width: 40%;
+    height: 400px;
     margin-top: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 10px;
 }
 
 #deepak>div>img {
-    width: 100%
+    width: 100%;
+    height: 250px;
 }
 
 .rmvbtn {
@@ -25,5 +26,67 @@
 .butt {
     margin-top: 5px;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+}
+
+.decbtn,
+.incbtn {
+    width: 30px;
+    background-color: brown;
+    font-weight: bold;
+}
+
+.sum {
+    width: 30%;
+    margin-top: 17px;
+    height: 600px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    margin-left: 25px;
+}
+
+.main123 {
+    margin-top: 30px;
+    display: flex;
+    text-align: center;
+    padding-top: 20px;
+    /* border: 5px solid red; */
+}
+
+hr {
+    width: 60%;
+    margin: auto;
+}
+
+.sum>button {
+    cursor: pointer;
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: navajowhite;
+    background-color: rgb(210, 120, 31);
+    margin-top: 30px;
+}
+
+.sum>input {
+    padding: 7px 20px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sum>p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sum>h1,
+h2 {
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#total12 {
+    display: flex;
+    justify-content: space-between;
 }

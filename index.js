@@ -25,3 +25,59 @@ setInterval(() => {
 
 var cat1 = document.querySelector(".cat")
 console.log(cat1)
+
+
+let leftbtn = document.querySelector(".btn-l");
+let rightbtn = document.querySelector(".btn-r");
+
+
+rightbtn.addEventListener("click", (e) => {
+    let x = document.querySelector(".product-slide");
+    x.scrollLeft += 800;
+    e.preventDefault()
+});
+
+leftbtn.addEventListener("click", (e) => {
+    let x = document.querySelector(".product-slide");
+    x.scrollLeft -= 800;
+    e.preventDefault()
+})
+
+var naam = (localStorage.getItem("name"))
+
+var naamdisplay = document.getElementById("username");
+
+var loginname = document.querySelector(".sign");
+if (naam == null) {
+    naamdisplay.innerText = "Hello login"
+} else {
+
+
+    naamdisplay.innerText = `Hello Mr_${naam}`
+}
+loginname.addEventListener("click", () => {
+    if (naam == null) {
+        window.open("login.html")
+    } else {
+        if (confirm("Do you want to logout")) {
+            localStorage.removeItem("name");
+            window.open("index.html")
+        } else {
+            window.open("index.html")
+        }
+
+    }
+
+})
+
+
+
+
+
+var backtop = document.getElementById("backtotop");
+backtop.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+})

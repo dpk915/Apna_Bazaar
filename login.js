@@ -1,4 +1,5 @@
 var userdata = JSON.parse(localStorage.getItem("logindetail")) || [];
+
 var uname = document.getElementById("number");
 var login = document.getElementById("loginform")
 login.addEventListener("submit", (e) => {
@@ -18,12 +19,9 @@ login.addEventListener("submit", (e) => {
 
     if (flag == true) {
 
-        alert("login succes full")
-        window.open("index.html")
-
-
+        localStorage.setItem("number", JSON.stringify(uname.value))
+        window.open("paaword.html")
     } else {
         alert("User not registered please create account")
     }
-
 })
